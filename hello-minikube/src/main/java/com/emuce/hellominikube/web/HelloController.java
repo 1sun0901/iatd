@@ -11,7 +11,7 @@ public class HelloController {
 
     @GetMapping("/hello/{name}")
     public ResponseEntity<String> hello(@PathVariable String name) throws Exception{
-        String greeting = "Hello" + name;
+        String greeting = "Hello   " + name;
         return new ResponseEntity<>(greeting, HttpStatus.OK);
     }
 }
